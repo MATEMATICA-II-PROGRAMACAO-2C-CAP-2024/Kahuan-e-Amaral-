@@ -1,11 +1,17 @@
 @import url(./css/header.css);
 
 :root{
-    -cor-de-fundo: #EBECEE;
-    -branco: #EBECEE
+    --cor-de-fundo: #EBECEE;
+    --branco: #EBECEE;
+    --laranja: #EB9B00;
+    --degrade:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+--fonte-principal:"poppins";
 }
 
 body{
- background-color: var(-cor-de-fundo);
+ background-color: var(--cor-de-fundo);
+ font-family: var(--fonte-principal);
+ font-size: 16px;
+ font-weight: 400;
 }
  

@@ -8,10 +8,11 @@
     }
   
     .cabecalho{
-        background-color: var(-branco);
+        background-color: var(--branco);
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
 
     .container{
@@ -21,4 +22,36 @@
     
     .container__imagem{
         padding: 1em;
+    }
+    
+    .lista__menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+    }
+
+    .container__botao:checked .lista__menu{
+        display: block;
+    }
+
+    .lista__menu__titulo,.lista__menu__item{
+        padding: 1em;
+        background-color: var(--branco);
+    }
+
+    .lista__menu__titulo{
+        color: var(--laranja);
+        font-weight: 700;
+    }
+    .link__menu__link{
+        background: var(--degrade);
+        -webtkit-blackground-clip: text ;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; 
+        text-transform: uppercase;
+    }
+    
+    .container__botao{
+        display: none;
     }
